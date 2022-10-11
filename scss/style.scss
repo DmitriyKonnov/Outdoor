@@ -1,1 +1,32 @@
+@import 'vars';
+@import '_normalise';
+@import '_mixins';
 
+// Блоки
+@import '_button';
+@import '_header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $brown;
+  font-family: $main-font;
+}
+
+.wrapper {
+  color: $brown;
+  font-family: $main-font;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 10px;
+}
