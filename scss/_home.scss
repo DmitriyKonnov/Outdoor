@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 640px;
+  background: url('../img/Home.jpg') no-repeat center/cover;
+  &__text {
+    max-width: 495px;
+  }
+  &__title {
+    color: $orange;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: $white;
+  }
+  p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #caccd1;
+  }
+}
