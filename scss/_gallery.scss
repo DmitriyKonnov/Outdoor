@@ -1,0 +1,35 @@
+.gallery {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background: url(../img/wave.png) no-repeat center/cover;
+  &__description {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    height: auto;
+    width: auto;
+    border-radius: 16px;
+    background-color: $black;
+    padding: 16px 22px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    color: $white;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
