@@ -1,0 +1,67 @@
+.footer {
+  padding: 100px 0;
+  background-color: $brown;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 76px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__section {
+    .section {
+      &__item {
+        color: $white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+      }
+      &__title {
+        color: $orange;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+      &__description {
+        color: $white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+  &__form {
+    max-width: 457px;
+  }
+  .form {
+    width: 458px;
+    background-color: $white;
+    border-radius: 8px;
+    &__field {
+      height: 53px;
+      width: 350px;
+      border: none;
+      border-radius: 8px;
+      padding-left: 10px;
+      outline: none;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    .copiright {
+      color: $white;
+    }
+    .social {
+      display: flex;
+      justify-content: space-between;
+      width: 126px;
+    }
+  }
+}
