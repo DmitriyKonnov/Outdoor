@@ -1,0 +1,33 @@
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background: url(../img/checkout.png) no-repeat center/cover;
+  &__inner {
+    max-width: 545px;
+    text-align: center;
+  }
+  &__title {
+    color: $gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: $orange;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray;
+    margin-bottom: 20px;
+  }
+}

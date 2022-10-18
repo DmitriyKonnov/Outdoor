@@ -13,4 +13,8 @@ button {
   color: $white;
   font-size: 16px;
   border-radius: 6px;
+  &__white {
+    background-color: $white;
+    color: $brown;
+  }
 }
