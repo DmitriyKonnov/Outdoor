@@ -1,0 +1,104 @@
+.guides {
+  padding: 100px 0;
+  &__description {
+    max-width: 545px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: $orange;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-family: $second-font;
+    color: $brown;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-bottom: 20px;
+    .item {
+      max-height: 568px;
+
+      &__img {
+        display: block;
+        margin-bottom: 20px;
+
+        img {
+          display: block;
+          width: 568px;
+          height: 319px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      &__link {
+        display: block;
+        max-width: 568px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .autor {
+          display: flex;
+          align-items: center;
+          &__avatar {
+            margin-right: 15px;
+          }
+          &__name {
+            font-family: $second-font;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+          }
+          &__prof {
+            color: $orange;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 15px;
+          }
+        }
+      }
+      &__date {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: $light-gray;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    img {
+      position: relative;
+      left: 5px;
+    }
+  }
+}
