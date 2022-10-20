@@ -9,9 +9,13 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 30px;
   }
   &__section {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
     .section {
       &__item {
         color: $white;
@@ -55,6 +59,7 @@
   &__footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .copiright {
       color: $white;
     }
@@ -62,6 +67,26 @@
       display: flex;
       justify-content: space-between;
       width: 126px;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .footer {
+    &__form {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 485px) {
+  .footer {
+    .form {
+      width: 300px;
+      &__field {
+        width: 200px;
+      }
     }
   }
 }

@@ -31,17 +31,20 @@
   }
   &__item {
     margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
     .item {
-      max-height: 568px;
-
       &__img {
         display: block;
         margin-bottom: 20px;
+        max-width: 568px;
+        max-height: 317px;
 
         img {
           display: block;
-          width: 568px;
-          height: 319px;
+          width: 100%;
+          height: 100%;
           object-fit: cover;
           border-radius: 10px;
         }
@@ -99,6 +102,44 @@
     img {
       position: relative;
       left: 5px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .guides {
+    &__list {
+      justify-content: center;
+    }
+    &__description {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .guides {
+    &__description {
+      width: 400px;
+    }
+    &__item {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .guides {
+    &__description {
+      width: 300px;
+    }
+    &__item {
+      width: 300px;
     }
   }
 }

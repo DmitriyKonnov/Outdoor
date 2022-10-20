@@ -33,3 +33,19 @@
     margin-right: 8px;
   }
 }
+@media (max-width: 800px) {
+  .gallery {
+    &__description {
+      right: 18px;
+    }
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
