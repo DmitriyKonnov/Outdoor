@@ -27,6 +27,27 @@ body {
   font-family: $main-font;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  &:hover {
+    opacity: 1;
+    &::before {
+      width: 100%;
+    }
+  }
+  &::before {
+    transition: 300ms;
+    height: 5px;
+    content: '';
+    position: absolute;
+    background-color: $brown;
+    width: 0%;
+    bottom: -5px;
+  }
+}
+
 .wrapper {
   color: $brown;
   font-family: $main-font;
