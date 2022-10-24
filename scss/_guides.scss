@@ -99,6 +99,15 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+    &:hover {
+      img {
+        transform: translateX(10px);
+      }
+    }
+    img {
+      position: relative;
+      transition: 300ms;
+    }
     img {
       position: relative;
       left: 5px;

@@ -13,8 +13,16 @@ button {
   color: $white;
   font-size: 16px;
   border-radius: 6px;
+  transition: 300ms;
+  &:hover {
+    filter: brightness(85%);
+  }
   &__white {
     background-color: $white;
     color: $brown;
+
+    &:hover {
+      filter: brightness(85%);
+    }
   }
 }
